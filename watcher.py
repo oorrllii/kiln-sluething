@@ -62,7 +62,7 @@ def main():
             continue
         kiln, status, unload_date = row[0], row[1], row[2]
 
-        if "San Francisco" in kiln and "Glaze" in status:
+        if True:
             last_status = read_last_status()
             if status != last_status:
                 transition_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
